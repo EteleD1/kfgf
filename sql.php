@@ -1,9 +1,9 @@
 <?php
 class sql {
 	private static $con;   // con variable existing in sql class. private can only use in the class sql.
-	public function sql() { // when function same name as class it is a constructor.
+	public static function boot() { // when function same name as class it is a constructor.
 		try {
-			self::$con = new PDO("mysql:host=localhost;dbname=blogg;charset=utf8", "root", ""); // static use ::. måste ändra "root" och "".
+			self::$con = new PDO("mysql:host=localhost;dbname=kfgf;charset=utf8", "root", ""); // static use ::. måste ändra "root" och "".
 			// set the PDO error mode to exception
 			self::$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			return self::$con;
@@ -40,4 +40,5 @@ class sql {
 		return self::$con->lastInsertId();
 	}
 }
+sql::boot();
 ?>

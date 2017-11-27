@@ -9,7 +9,6 @@ require("boot.php");
 </head>
 <body>
 
-
 <? if(isset($_SESSION['user'])): ?>
 	Du är inloggad som <?= $_SESSION['user']['name'] ?><br>
 	Behörighet: <?= $_SESSION['user']['typ'] ?><br><br>
@@ -18,7 +17,7 @@ require("boot.php");
 		<a href="reg.php">Registrera ny medlem</a>
 		<br>
 	<? endif; ?>
-
+	<a href="medreg.php">Registrera nya medlemmar</a><br>
 	<a href="logout.php">Logga ut</a>
 
 <? else: ?>

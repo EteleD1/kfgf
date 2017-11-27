@@ -12,7 +12,7 @@ createHeader("kfgf");
 	<p>Admin<input type="radio" name="typ" value="Admin"></p>
 	<input type="text" name="mail" placeholder="E-post"><br>
 	<br>
-	<input type="text" name="username" placeholder="Användarnamn"><br>
+	<input type="text" name="username" placeholder="Användarnamn"><br><br>
 	<input type="password" name="password" placeholder="Lösenord"><br>
 	<input type="submit" value="Registrera">
 </form>

@@ -18,7 +18,7 @@ function createHeader($title) { // Vår funktion för att skriva ut all vår fö
 	Behörighet: <?= $_SESSION['user']['typ'] ?><br><br>
 	
 	<? if($_SESSION['user']['typ'] == "Admin"): ?>
-		<a href="reg.php">Registrera ny medlem</a>
+		<a href="reg.php">Registrera ny Användare</a>
 		<br>
 	<? endif; ?><!--End session, user, typ-->
 	<a href="medreg.php">Registrera nya medlemmar</a><br>

@@ -10,9 +10,9 @@ createHeader("kfgf");
 	<p>Verksamhetschef<input type="radio" name="typ" value="Verksamhetschef"></p>
 	<p>Föreståndare<input type="radio" name="typ" value="Föreståndare"></p>
 	<p>Admin<input type="radio" name="typ" value="Admin"></p>
-	<input type="text" name="mail" placeholder="E-post"><br>
+	<input type="text" name="mail" placeholder="E-post" required><br>
 	<br>
-	<input type="text" name="username" placeholder="Användarnamn"><br><br>
-	<input type="password" name="password" placeholder="Lösenord"><br>
+	<input type="text" name="username" placeholder="Användarnamn" required><br><br>
+	<input type="password" name="password" placeholder="Lösenord" required><br><br>
 	<input type="submit" value="Registrera">
 </form>

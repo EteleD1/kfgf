@@ -8,29 +8,7 @@ require("boot.php");
 	<meta charset="UTF-8">
 </head>
 <body>
-
-<? if(isset($_SESSION['user'])): ?>
-	Du är inloggad som <?= $_SESSION['user']['name'] ?><br>
-	Behörighet: <?= $_SESSION['user']['typ'] ?><br><br>
-	
-	<? if($_SESSION['user']['typ'] == "Admin"): ?>
-		<a href="reg.php">Registrera ny medlem</a>
-		<br>
-	<? endif; ?>
-	<a href="medreg.php">Registrera nya medlemmar</a><br>
-	<a href="logout.php">Logga ut</a>
-
-<? else: ?>
-	<form action="login.php" method="POST">
-		<input type="text" name="username" placeholder="Användarnamn"><br>
-		<input type="password" name="password" placeholder="Lösenord"><br>
-		<input type="submit" value="Logga in">
-	</form>
-	<br>
-
-<? endif; ?>
-
-	
+<? createHeader("kfgf"); ?>
 
 	
 </body>

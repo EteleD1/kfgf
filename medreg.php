@@ -1,6 +1,6 @@
 <?php
 require("boot.php"); // Inkludera boot.php där all vår "standardkod" finns
-
+createHeader("kfgf");
 if(isset($_POST["persnr"])) { // Kollar ifall $_POST["username"] finns. Och ifall den finns (skickat från formuläret) så vet vi att "password" också finns
 	$ok = false;
 	$namn = $_POST["namn"]; // Användarnamn och lösenord för enklare hantering
@@ -18,8 +18,6 @@ if(isset($_POST["persnr"])) { // Kollar ifall $_POST["username"] finns. Och ifal
 	} else {
 		echo "Något gick fel!";
 	}
-
-	
 }
 ?>
 <h1>Registrering av ny medlem</h1>

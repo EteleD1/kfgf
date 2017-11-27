@@ -1,5 +1,6 @@
 <?php
 require("boot.php"); // Inkludera boot.php där all vår "standardkod" finns
+createHeader("kfgf");
 ?>
 <h1>Registrering</h1>
 

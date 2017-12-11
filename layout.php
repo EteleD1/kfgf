@@ -14,16 +14,17 @@ function createHeader($title) { // Vår funktion för att skriva ut all vår fö
 	<body>
 
 	<? if(isset($_SESSION['user'])): ?>
+		<? if($_SESSION['user']['typ'] == "Admin"): ?>
+		<ul><!--Navbar-->	
+			<li><a href="reg.php">Registrera ny Användare</a></li>
+		<? endif; ?><!--End session, user, typ-->
+			<li><a href="medreg.php">Registrera nya medlemmar</a></li>
+			<li><a href=""></a></li>
+			<li><a href="logout.php">Logga ut</a></li>
+			<li><a href=""></a></li>
+		</ul>
 	Du är inloggad som <?= $_SESSION['user']['name'] ?><br>
 	Behörighet: <?= $_SESSION['user']['typ'] ?><br><br>
-	
-	<? if($_SESSION['user']['typ'] == "Admin"): ?>
-		<a href="reg.php">Registrera ny Användare</a>
-		<br>
-	<? endif; ?><!--End session, user, typ-->
-	<a href="medreg.php">Registrera nya medlemmar</a><br>
-	<a href="logout.php">Logga ut</a>
-
 	<? else: ?>
 	<form action="login.php" method="POST">
 		<input type="text" name="username" placeholder="Användarnamn"><br>
@@ -31,7 +32,7 @@ function createHeader($title) { // Vår funktion för att skriva ut all vår fö
 		<input type="submit" value="Logga in">
 	</form>
 	<br>
-
+	
 	<? endif; ?><!--End isset user-->
 <?php
 }

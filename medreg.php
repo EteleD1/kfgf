@@ -23,7 +23,7 @@ if(isset($_POST["persnr"])) { // Kollar ifall $_POST["username"] finns. Och ifal
 <h1>Registrering av ny medlem</h1>
 
 <form action="medreg.php" method="POST">
-	<p></p>
+	<p>Plats</p>
 	<select name="plats">
 	  <option value="Barbacka">Barbacka</option>
 	  <option value="Degeberga">Degeberga</option>
@@ -35,7 +35,8 @@ if(isset($_POST["persnr"])) { // Kollar ifall $_POST["username"] finns. Och ifal
 	  <option value="Åhus">Åhus</option>
 	  <option value="Öllsjö">Öllsjö</option>
 	  <option value="Österäng">Österäng</option>
-	</select><br><br>
+	</select><br>
+	<p>Kön</p>
 	<select name="kön">
 	  <option value="Man">Man</option>
 	  <option value="Kvinna">Kvinna</option>

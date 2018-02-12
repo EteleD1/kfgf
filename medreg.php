@@ -24,7 +24,7 @@ if(isset($_POST["persnr"])) { // Kollar ifall $_POST["username"] finns. Och ifal
 
 <form action="medreg.php" method="POST">
 	<p>Plats</p>
-	<select name="plats">
+	<select name="regplace">
 	  <option value="Barbacka">Barbacka</option>
 	  <option value="Degeberga">Degeberga</option>
 	  <option value="Fjälkinge">Fjälkinge</option>
